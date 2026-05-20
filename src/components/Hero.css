@@ -2,14 +2,16 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 6rem 4rem 2rem;
+  padding: 6rem clamp(1.5rem, 5vw, 4rem) 2rem;
   gap: 2rem;
   background-image:
     linear-gradient(rgba(37,99,235,0.08) 1px, transparent 1px),
     linear-gradient(90deg, rgba(37,99,235,0.08) 1px, transparent 1px);
   background-size: 50px 50px;
+  overflow: hidden;
 }
 
+/* ─── HERO CONTENT ─────────────────────────────────────── */
 .hero-content {
   flex: 1;
   max-width: 580px;
@@ -31,18 +33,17 @@
 }
 
 .hero-title {
-  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-size: clamp(2rem, 5vw, 3rem);
   font-weight: 900;
   line-height: 1.2;
   margin-bottom: 0.3rem;
   animation: fadeInUp 0.8s ease 0.15s both;
   letter-spacing: 0.5px;
 }
-
 .hero-title .name { color: var(--blue-light); }
 
 .hero-sub {
-  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-size: clamp(1.5rem, 3.5vw, 2.5rem);
   font-weight: 700;
   margin-bottom: 1.5rem;
   display: flex;
@@ -65,7 +66,6 @@
   animation: blink 1s infinite;
   border-radius: 1px;
 }
-
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
 
 .hero-desc {
@@ -95,7 +95,6 @@
   cursor: pointer;
   letter-spacing: 0.3px;
 }
-
 .btn-primary:hover {
   background: #1d4ed8;
   transform: translateY(-2px);
@@ -114,83 +113,91 @@
   cursor: pointer;
   letter-spacing: 0.3px;
 }
-
 .btn-outline:hover {
   background: rgba(37, 99, 235, 0.1);
   transform: translateY(-2px);
 }
 
-/* Hero Visual */
+/* ─── HERO VISUAL (THE ORBIT SYSTEM) ───────────────────── */
+/*
+  KEY FIX: Use a fixed square size so the orbit ring is always
+  a perfect circle. We use a CSS custom property --orbit-size
+  so inner elements can reference it.
+*/
 .hero-visual {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  --orbit-size: 520px;          /* total canvas size          */
+  --inner-r: 175px;             /* inner orbit radius         */
+  --outer-r: 250px;             /* outer orbit radius         */
+  --icon-size: 52px;            /* icon box size              */
+  --icon-half: calc(var(--icon-size) / 2);
+
   position: relative;
-  width: 500px;
-  height: 500px;
+  width: var(--orbit-size);
+  height: var(--orbit-size);
+  flex-shrink: 0;
   animation: fadeIn 1s ease 0.5s both;
 }
 
+/* ─── ORBIT RINGS ───────────────────────────────────────── */
 .orbit-ring {
   position: absolute;
   border-radius: 50%;
-  border: 2px dashed rgba(37, 99, 235, 0.6);
-}
-
-.orbit-1 {
-  width: 500px;
-  height: 500px;
-  animation: spin 20s linear infinite;
-  will-change: transform;
-}
-
-@keyframes spin { 
-  from { transform: rotate(0deg); } 
-  to { transform: rotate(360deg); } 
-}
-
-/* Profile circle */
-.profile-circle {
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  position: absolute;
-  z-index: 5;
+  border: 1.5px dashed rgba(37, 99, 235, 0.5);
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* spin animation applied per ring */
+}
+
+.orbit-inner {
+  width:  calc(var(--inner-r) * 2);
+  height: calc(var(--inner-r) * 2);
+  animation: spin 18s linear infinite;
+}
+
+.orbit-outer {
+  width:  calc(var(--outer-r) * 2);
+  height: calc(var(--outer-r) * 2);
+  animation: spin 28s linear infinite reverse;
+}
+
+@keyframes spin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* ─── PROFILE CIRCLE ────────────────────────────────────── */
+.profile-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
   background: radial-gradient(circle, #162a55, #0a0f1d);
   border: 3px solid rgba(37, 99, 235, 0.5);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
   box-shadow: 0 0 60px rgba(37, 99, 235, 0.4);
+  overflow: hidden;
+  z-index: 5;
+  flex-shrink: 0;
 }
 
 .profile-inner {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  border-radius: 50%;
   overflow: hidden;
+  position: relative;
 }
 
 .profile-img {
-  width: 414px;
-  height: 414px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center top;
-  transform: scale(1.1);
-}
-
-.profile-emoji {
-  font-size: 8rem;
-  opacity: 0.55;
-  filter: grayscale(0.2);
+  border-radius: 50%;
+  display: block;
 }
 
 .profile-glow {
@@ -204,86 +211,149 @@
   border-radius: 50%;
   filter: blur(40px);
   opacity: 0.2;
+  pointer-events: none;
 }
 
-/* Tech icons */
+/* ─── TECH ICONS ────────────────────────────────────────── */
+/*
+  Icons sit at the CENTER of the orbit ring div (top:50% left:50%)
+  then get pushed out by translate(radius) inside the ring's
+  local coordinate system. Because the ring itself rotates,
+  we counter-rotate the icon so it stays upright.
+*/
 .tech-icon {
   position: absolute;
-  width: 60px;
-  height: 60px;
+  width:  var(--icon-size);
+  height: var(--icon-size);
+  top:  50%;
+  left: 50%;
+  margin-top:  calc(-1 * var(--icon-half));
+  margin-left: calc(-1 * var(--icon-half));
   border-radius: 14px;
   background: var(--card);
   border: 1px solid var(--border);
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 10px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   z-index: 10;
-  top: 50%;
-  left: 50%;
-  margin-left: -30px;
-  margin-top: -30px;
-  transform-origin: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.tech-icon:hover { transform: scale(1.15) !important; }
-
-.tech-icon img { width: 100%; height: 100%; object-fit: contain; }
-
-/* Backend tools - Inner orbit (175px radius) - Static positioning with 90° spacing */
-.ti-mongo { 
-  display: flex;
-  transform: rotate(0deg) translate(175px) rotate(0deg);
+.tech-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.ti-node { 
-  display: flex;
-  transform: rotate(90deg) translate(175px) rotate(-90deg);
+/* ── Inner orbit icons (4 icons, 90° apart) ── */
+/* The ring rotates; we counter-rotate the icon to keep it upright */
+.ti-mongo   { transform: rotate(0deg)   translateX(var(--inner-r)) rotate(0deg);   }
+.ti-node    { transform: rotate(90deg)  translateX(var(--inner-r)) rotate(-90deg);  }
+.ti-python  { transform: rotate(180deg) translateX(var(--inner-r)) rotate(-180deg); }
+.ti-java    { transform: rotate(270deg) translateX(var(--inner-r)) rotate(-270deg); }
+
+/* ── Outer orbit icons (5 icons, 72° apart) ── */
+.ti-react    { transform: rotate(0deg)   translateX(var(--outer-r)) rotate(0deg);   }
+.ti-js       { transform: rotate(72deg)  translateX(var(--outer-r)) rotate(-72deg);  }
+.ti-tailwind { transform: rotate(144deg) translateX(var(--outer-r)) rotate(-144deg); }
+.ti-next     { transform: rotate(216deg) translateX(var(--outer-r)) rotate(-216deg); }
+.ti-git      { transform: rotate(288deg) translateX(var(--outer-r)) rotate(-288deg); }
+
+/* ─── ANIMATIONS ────────────────────────────────────────── */
+@keyframes fadeIn    { from{opacity:0}                        to{opacity:1}      }
+@keyframes fadeInUp  { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:none} }
+@keyframes fadeInDown{ from{opacity:0;transform:translateY(-15px)} to{opacity:1;transform:none} }
+
+/* ─── RESPONSIVE ────────────────────────────────────────── */
+
+/* Tablet */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 5rem 3rem 2rem;
+    min-height: auto;
+    gap: 3rem;
+    align-items: center;
+  }
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-sub   { justify-content: center; font-size: clamp(1.3rem, 5vw, 2rem); }
+  .hero-btns  { justify-content: center; }
+  .hero-visual {
+    --orbit-size: 440px;
+    --inner-r: 145px;
+    --outer-r: 210px;
+    --icon-size: 46px;
+    order: -1;
+  }
+  .profile-circle { width: 220px; height: 220px; }
 }
 
-.ti-python { 
-  display: flex;
-  transform: rotate(180deg) translate(175px) rotate(-180deg);
+/* Mobile */
+@media (max-width: 767px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 5rem 1.5rem 2rem;
+    min-height: auto;
+    gap: 2rem;
+    align-items: center;
+  }
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero-title { font-size: clamp(1.8rem, 8vw, 2.5rem); }
+  .hero-sub   { justify-content: center; font-size: clamp(1.3rem, 5vw, 2rem); }
+  .hero-btns  { justify-content: center; }
+  .hero-visual {
+    --orbit-size: 340px;
+    --inner-r: 110px;
+    --outer-r: 162px;
+    --icon-size: 40px;
+    order: -1;
+  }
+  .profile-circle { width: 170px; height: 170px; }
+  .tech-icon { border-radius: 10px; padding: 7px; }
 }
 
-.ti-java { 
-  display: flex;
-  transform: rotate(270deg) translate(175px) rotate(-270deg);
+/* Small mobile */
+@media (max-width: 480px) {
+  .hero-section { padding: 5rem 1rem 2rem; }
+  .hero-badge   { font-size: 0.85rem; padding: 0.35rem 1rem; }
+  .hero-desc    { font-size: 0.95rem; }
+  .btn-primary,
+  .btn-outline  { font-size: 0.95rem; padding: 0.75rem 1.5rem; }
+  .hero-btns    { flex-direction: column; width: 100%; }
+  .btn-primary,
+  .btn-outline  { width: 100%; justify-content: center; }
+  .hero-visual {
+    --orbit-size: 300px;
+    --inner-r: 95px;
+    --outer-r: 143px;
+    --icon-size: 36px;
+  }
+  .profile-circle { width: 150px; height: 150px; }
+  .tech-icon { border-radius: 8px; padding: 6px; }
 }
 
-/* Frontend tools - Outer orbit (250px radius) - Static positioning with 72° spacing */
-.ti-react { 
-  display: flex;
-  transform: rotate(0deg) translate(250px) rotate(0deg);
+/* Desktop large */
+@media (min-width: 1280px) {
+  .hero-section { padding: 6rem 5vw 2rem; }
 }
 
-.ti-js { 
-  display: flex;
-  transform: rotate(72deg) translate(250px) rotate(-72deg);
-}
-
-.ti-tailwind { 
-  display: flex;
-  transform: rotate(144deg) translate(250px) rotate(-144deg);
-}
-
-.ti-next { 
-  display: flex;
-  transform: rotate(216deg) translate(250px) rotate(-216deg);
-}
-
-.ti-git { 
-  display: flex;
-  transform: rotate(288deg) translate(250px) rotate(-288deg);
-}
-
-/* Animations */
-@keyframes fadeIn { from{opacity:0} to{opacity:1} }
-@keyframes fadeInUp { from{opacity:0;transform:translateY(20px)} to{opacity:1;transform:none} }
-@keyframes fadeInDown { from{opacity:0;transform:translateY(-15px)} to{opacity:1;transform:none} }
-
-@media (max-width: 900px) {
-  .hero-section { flex-direction: column; padding: 6rem 1.5rem 2rem; min-height: auto; gap: 3rem; }
-  .hero-visual { display: none; }
+/* Ultra-wide */
+@media (min-width: 1536px) {
+  .hero-section  { padding: 6rem 6rem 2rem; }
+  .hero-content  { max-width: 680px; }
+  .hero-visual {
+    --orbit-size: 580px;
+    --inner-r: 195px;
+    --outer-r: 278px;
+    --icon-size: 58px;
+  }
+  .profile-circle { width: 290px; height: 290px; }
 }

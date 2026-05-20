@@ -21,6 +21,14 @@ function SplashCursor({
   const animationFrameId = useRef(null);
 
   useEffect(() => {
+    // Detect mobile devices and disable heavy effects
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth <= 768;
+    
+    if (isMobile) {
+      // Don't render WebGL fluid on mobile for performance
+      return;
+    }
+
     const canvas = canvasRef.current;
     if (!canvas) return;
 

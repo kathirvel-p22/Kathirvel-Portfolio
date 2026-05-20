@@ -11,6 +11,21 @@
   background-size: 50px 50px;
 }
 
+/* Reduce grid complexity on mobile */
+@media (max-width: 767px) {
+  .grid-bg {
+    background-size: 40px 40px;
+    opacity: 0.7;
+  }
+}
+
+/* Disable grid on small mobile for performance */
+@media (max-width: 480px) {
+  .grid-bg {
+    display: none;
+  }
+}
+
 /* Reveal animation */
 .reveal {
   opacity: 0;
@@ -41,15 +56,43 @@
 section {
   position: relative;
   z-index: 1;
-  padding: 5rem 4rem;
+  padding: clamp(3rem, 8vw, 5rem) clamp(1.5rem, 5vw, 4rem);
+}
+
+/* Tablet adjustments */
+@media (max-width: 1023px) and (min-width: 768px) {
+  section {
+    padding: 4rem 3rem;
+  }
+}
+
+/* Mobile adjustments */
+@media (max-width: 767px) {
+  section {
+    padding: 3rem 1.5rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  section {
+    padding: 2.5rem 1.2rem;
+  }
 }
 
 .section-title {
   text-align: center;
-  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
   font-weight: 700;
   margin-bottom: 0.5rem;
   letter-spacing: 0.5px;
+}
+
+/* Mobile optimization */
+@media (max-width: 767px) {
+  .section-title {
+    font-size: clamp(1.6rem, 6vw, 2.2rem);
+  }
 }
 
 .section-title span { color: var(--blue-light); }
