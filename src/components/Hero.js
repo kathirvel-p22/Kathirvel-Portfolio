@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
-import profileImg from '../hero.png';
+import profileImgWebP from '../hero.webp';
+import profileImgPng  from '../hero-optimized.png';
 
 const words = ['Engineer_', 'Developer_', 'Problem Solver_', '_JeduAi_Founder_'];
 
@@ -102,7 +103,18 @@ export default function Hero() {
         {/* Profile circle in the center */}
         <div className="profile-circle">
           <div className="profile-inner">
-            <img src={profileImg} alt="Kathirvel P" className="profile-img" />
+            <picture>
+              <source srcSet={profileImgWebP} type="image/webp" />
+              <img
+                src={profileImgPng}
+                alt="Kathirvel P"
+                className="profile-img"
+                width="420"
+                height="420"
+                loading="eager"
+                decoding="async"
+              />
+            </picture>
             <div className="profile-glow" />
           </div>
         </div>
