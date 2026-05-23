@@ -3,7 +3,7 @@ import './Hero.css';
 import profileImgWebP from '../hero.webp';
 import profileImgPng  from '../hero-optimized.png';
 
-const words = ['Engineer_', 'Developer_', 'Problem Solver_', '_JeduAi_Founder_'];
+const words = ['Engineer_', 'Developer_', 'Researcher_', '_JeduAi_Founder_'];
 
 // Inner orbit – 4 backend icons, 90° apart
 const innerIcons = [
@@ -56,22 +56,20 @@ export default function Hero() {
     <section id="hero" className="hero-section">
       {/* ── Left: text content ── */}
       <div className="hero-content">
-        <div className="hero-badge">Software Engineer &amp; Full Stack Developer</div>
+        <div className="hero-badge">AI Developer & MERN Stack Developer</div>
         <h1 className="hero-title">
           Hey! I'm <span className="name">Kathirvel P</span>
         </h1>
         <div className="hero-sub">
-          <span>A Software&nbsp;</span>
+          <span>An AI&nbsp;</span>
           <span className="typed">{text}</span>
           <span className="cursor" />
         </div>
         <p className="hero-desc">
-          Aspiring Software Engineer and Full Stack Developer with strong skills in Java, Python,
-          JavaScript, Spring Boot, React JS, Flutter, and MySQL. I specialize in building scalable,
-          high-performance web and mobile applications with a focus on performance, security, and
-          user experience. Possesses solid problem-solving ability, adaptability, and a continuous
-          learning mindset, committed to delivering high-quality software solutions in professional
-          environments.
+          Kathirvel P is an AI and MERN Stack developer specializing in cybersecurity, multilingual AI systems, 
+          and mobile applications. I build scalable, high-performance web and mobile applications using React, 
+          Node.js, Python, Java, and cutting-edge AI technologies. Founder of JeduAI and passionate about 
+          creating innovative solutions that solve real-world problems.
         </p>
         <div className="hero-btns">
           <a href="#projects" className="btn-primary">Check portfolio</a>

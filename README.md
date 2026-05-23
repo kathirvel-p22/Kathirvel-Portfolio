@@ -1,301 +1,228 @@
-# 🚀 Kathirvel P - Portfolio
+# 🚀 Kathirvel P - AI Developer & MERN Stack Developer Portfolio
 
-<div align="center">
+[![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://kathirvel-p.netlify.app)
+[![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-![React](https://img.shields.io/badge/React-18.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![CSS3](https://img.shields.io/badge/CSS3-Modern-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+> **AI and MERN Stack Developer** specializing in cybersecurity, multilingual AI systems, and mobile applications. Building scalable, high-performance applications with React, Node.js, Python, and Java.
 
-**A premium, modern portfolio showcasing full-stack development expertise with stunning animations and interactive features**
-
-[🌐 Live Demo](#) • [📧 Contact](mailto:mpmahendhira@gmail.com) • [💼 LinkedIn](https://www.linkedin.com/in/kathirvel-p-981092330/)
-
-</div>
+## 🌟 Live Portfolio
+**[🔗 Visit Portfolio](https://kathirvel-p.netlify.app)**
 
 ---
 
-## ✨ Features
+## 👨‍💻 About Kathirvel P
 
-### 🎨 **Premium Design**
-- 🌊 **WebGL Fluid Cursor Animation** - Interactive fluid dynamics that follow your mouse
-- 🎯 **Rotating Tech Orbit** - Animated tech stack icons orbiting around profile picture
-- ⚡ **Smooth Scroll Animations** - Reveal animations on scroll with intersection observer
-- 🎭 **Glassmorphism Effects** - Modern frosted glass UI elements
-- 🌈 **Gradient Accents** - Beautiful blue gradient theme throughout
+I'm **Kathirvel P**, an AI and MERN Stack developer passionate about creating innovative solutions that solve real-world problems. Currently pursuing B.Tech in Computer Science and Business Systems at V.S.B Engineering College with a CGPA of 8.39/10.
 
-### 🛠️ **Interactive Components**
-- 📱 **Responsive Navigation** - Premium animated navbar with hover effects
-- 🎪 **Animated Timeline** - Project showcase with flowing spark effects
-- 📊 **Tech Stack Grid** - Organized skill categories with icon cards
-- 🎓 **Experience Timeline** - Work experience, education, and certifications
-- ❓ **Accordion FAQs** - Smooth expanding FAQ section
-- 📬 **Contact Form** - EmailJS integration for direct messaging
-- 🗺️ **Google Maps** - Embedded location map
-
-### 🚀 **Performance Optimized**
-- ⚡ Fast loading with optimized assets
-- 📱 Fully responsive across all devices
-- 🎯 SEO optimized with meta tags
-- ♿ Accessibility compliant
-- 🔧 Clean, maintainable code structure
+### 🎯 Specializations
+- **Artificial Intelligence & Machine Learning**
+- **MERN Stack Development** (MongoDB, Express.js, React.js, Node.js)
+- **Cybersecurity Applications**
+- **Multilingual AI Systems**
+- **Mobile App Development** (React Native, Flutter)
+- **Full Stack Web Development**
 
 ---
 
-## 🎯 Tech Stack
+## 🛠️ Tech Stack
 
-### **Frontend**
-```
-⚛️  React 18          - Modern UI library
-🎨  CSS3              - Advanced styling with animations
-🌊  WebGL             - Fluid cursor effects
-📐  Flexbox/Grid      - Responsive layouts
-```
+### **Programming Languages**
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 
-### **Tools & Libraries**
-```
-📧  EmailJS           - Contact form integration
-🗺️  Google Maps API   - Location embedding
-🎭  Intersection Observer - Scroll animations
-🎨  Simple Icons CDN  - Tech stack icons
-```
+### **Frontend Development**
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-### **Fonts**
-```
-✍️  Space Grotesk     - Modern sans-serif
-💻  Fira Code         - Monospace for code
-🎨  Roboto            - Clean hierarchy
-```
+### **Backend Development**
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
 
----
+### **Databases**
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
-## 📂 Project Structure
+### **Mobile Development**
+![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
 
-```
-kathir-portfolio/
-│
-├── 📁 public/
-│   ├── index.html          # HTML template with meta tags
-│   └── favicon.png         # Custom favicon
-│
-├── 📁 src/
-│   ├── 📁 components/
-│   │   ├── Navbar.js/css       # 🧭 Premium animated navigation
-│   │   ├── Hero.js/css         # 🎯 Hero with rotating tech orbit
-│   │   ├── About.js/css        # 📖 Experience & education timeline
-│   │   ├── Skills.js/css       # 💪 Tech stack expertise grid
-│   │   ├── Projects.js/css     # 🚀 Animated project showcase
-│   │   ├── FAQs.js/css         # ❓ Accordion FAQ section
-│   │   ├── Contact.js/css      # 📬 Contact form + map
-│   │   ├── Footer.js/css       # 🔗 Social links & info
-│   │   ├── FAB.js/css          # ⬆️ Floating action button
-│   │   ├── SplashCursor.js     # 🌊 WebGL fluid animation
-│   │   └── useReveal.js        # ✨ Scroll reveal hook
-│   │
-│   ├── App.js              # Main app component
-│   ├── App.css             # Global app styles
-│   ├── index.js            # React entry point
-│   ├── index.css           # CSS variables & base styles
-│   ├── hero.png            # Profile image
-│   └── Kathirvel_P_Resume.pdf  # Downloadable resume
-│
-├── package.json            # Dependencies
-├── .gitignore             # Git ignore rules
-└── README.md              # You are here! 📍
-```
+### **AI/ML & Tools**
+![Google Gemini AI](https://img.shields.io/badge/Google_Gemini_AI-4285F4?style=for-the-badge&logo=google&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Featured Projects
 
-### Prerequisites
-```bash
-📦 Node.js v16+ 
-📦 npm or yarn
-```
+### 🤖 [AIVONITY](https://github.com/kathirvel-p22/Aivonity_App)
+**AI-Powered Multilingual Educational Platform**
+- Built with **React Native, Node.js, MongoDB**
+- Integrated **Google Gemini AI** for intelligent tutoring
+- Supports **multiple languages** for global accessibility
+- Real-time learning analytics and progress tracking
 
-### Installation
+### 🏫 [Exam Hall Allocation System](https://github.com/kathirvel-p22/Exam_Hallallocation_Management)
+**Smart Exam Management Solution**
+- Developed using **MERN Stack**
+- Automated hall allocation algorithms
+- Real-time seat management and conflict resolution
+- Admin dashboard with analytics
 
-```bash
-# 1️⃣ Clone the repository
-git clone https://github.com/kathirvel-p22/Kathirvel-Portfolio.git
+### 🔍 [Java Search Engine](https://github.com/kathirvel-p22/Search-Engine-in-Java)
+**High-Performance Search Engine**
+- Built with **Java** and advanced data structures
+- Implemented indexing and ranking algorithms
+- Fast query processing and result optimization
+- Scalable architecture for large datasets
 
-# 2️⃣ Navigate to project directory
-cd Kathirvel-Portfolio
-
-# 3️⃣ Install dependencies
-npm install
-
-# 4️⃣ Start development server
-npm start
-
-# 🎉 Open http://localhost:3000 in your browser
-```
-
-### Build for Production
-
-```bash
-# Create optimized production build
-npm run build
-
-# The build folder is ready to be deployed! 🚀
-```
+### 🎓 [JeduAI Connect](https://github.com/kathirvel-p22/JeduAi)
+**AI-Powered Learning Assistant**
+- **Founder & Lead Developer** of JeduAI
+- Integrated **AI tutoring** and **personalized learning**
+- Built with **React.js, Node.js, Python**
+- Machine learning-based content recommendations
 
 ---
 
-## 🎨 Customization Guide
+## 🏆 Achievements & Certifications
 
-### 🎨 **Colors & Theme**
-Edit CSS variables in `src/index.css`:
-```css
-:root {
-  --blue: #2563eb;          /* Primary blue */
-  --blue-light: #60a5fa;    /* Light blue accent */
-  --bg: #0a0e17;            /* Dark background */
-  --text: #e2e8f0;          /* Light text */
-  /* ... more variables */
-}
-```
+### 📜 **Certifications**
+- **Artificial Intelligence: Concepts and Techniques** - NPTEL (IISc Bangalore)
+- **Java Full Stack Developer** - Infosys Springboard
+- **Prompt Engineering for ChatGPT** - Vanderbilt University (Coursera)
+- **Foundations of Project Management** - Google (Coursera)
+- **Salesforce Agenforce Champion** - NASSCOM FutureSkills Prime
+- **Java (Basic)** - HackerRank
 
-### 🖼️ **Profile Image**
-Replace `src/hero.png` with your photo (recommended: 500x500px)
-
-### 📄 **Resume**
-Replace `src/Kathirvel_P_Resume.pdf` with your resume
-
-### 📧 **Contact Form**
-Update EmailJS credentials in `src/components/Contact.js`:
-```javascript
-const serviceID = 'your_service_id';
-const templateID = 'your_template_id';
-const publicKey = 'your_public_key';
-```
-
-### 🔗 **Social Links**
-Update links in `src/components/Footer.js`:
-```javascript
-WhatsApp: https://wa.me/YOUR_NUMBER
-LinkedIn: https://linkedin.com/in/YOUR_PROFILE
-GitHub: https://github.com/YOUR_USERNAME
-```
+### 💪 **Coding Achievements**
+- **155+ LeetCode Problems Solved**
+- **69-Day Coding Streak**
+- Strong problem-solving skills in **Data Structures & Algorithms**
 
 ---
 
-## 🌐 Deployment
+## 💼 Professional Experience
 
-### **Deploy to Vercel** (Recommended)
-```bash
-# 1️⃣ Install Vercel CLI
-npm i -g vercel
-
-# 2️⃣ Deploy
-vercel
-
-# ✅ Your site is live!
-```
-
-### **Deploy to Netlify**
-```bash
-# 1️⃣ Build the project
-npm run build
-
-# 2️⃣ Drag & drop the 'build' folder to Netlify
-# Or connect your GitHub repo for auto-deployment
-```
-
-### **Deploy to GitHub Pages**
-```bash
-# 1️⃣ Install gh-pages
-npm install --save-dev gh-pages
-
-# 2️⃣ Add to package.json
-"homepage": "https://yourusername.github.io/repo-name",
-"scripts": {
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
-
-# 3️⃣ Deploy
-npm run deploy
-```
+### **Full Stack Development Intern**
+**Brainery Spot Technology** | *June 2024 – July 2024*
+- Engineered frontend and backend components using **React, Spring Boot, MySQL**
+- Designed and built **REST APIs** for real-time data processing
+- **Reduced response time by 40%** through optimization
+- Collaborated using **Git/GitHub** for version control
 
 ---
 
-## 🎯 Key Highlights
+## 🎓 Education
 
-### 💼 **Professional Experience**
-- 🏢 Software Engineering Intern at Brainery Spot Technology
-- 🚀 Built scalable applications serving 500+ users
-- 🤖 AI/ML integration with Google Gemini AI
-- 🐳 Docker & Kubernetes deployment experience
+**B.Tech - Computer Science and Business Systems**  
+**V.S.B Engineering College, Karur** | *2023 – 2027*  
+**CGPA: 8.39/10**
 
-### 🏆 **Featured Projects**
-- 🚗 **AIVONITY** - AI-powered vehicle health platform
-- 📝 **Exam Hall Allocation** - Smart seat management system
-- 🔍 **Java Search Engine** - Google-like search with ranking
-- 🎓 **JeduAI** - AI-powered learning platform
+---
 
-### 💪 **Technical Skills**
-- **Languages**: Java, Python, JavaScript, Dart
-- **Frontend**: React, HTML5, CSS3, Tailwind
-- **Backend**: Spring Boot, REST APIs, PHP
-- **Database**: MySQL, PostgreSQL
-- **AI/ML**: Machine Learning, Computer Vision, Prompt Engineering
-- **Tools**: Git/GitHub, Docker, VS Code, XAMPP
+## 🌐 Connect with Kathirvel P
 
-### 🎓 **Education**
-- 🎓 B.Tech in Computer Science Engineering
-- 🏫 V.S.B Engineering College
-- 📊 CGPA: 8.39/10
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=todoist&logoColor=white)](https://kathirvel-p.netlify.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/kathirvel-p)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kathirvel-p22)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:kathirvelp.dev@gmail.com)
+
+---
+
+## 🚀 Portfolio Features
+
+### ✨ **Modern Design**
+- **Responsive Design** - Perfect on all devices
+- **Dark Theme** with premium glassmorphism effects
+- **Smooth Animations** and micro-interactions
+- **WebGL Fluid Cursor** for immersive experience
+
+### 🎯 **Performance Optimized**
+- **16KB WebP Images** (98.9% compression from original)
+- **Lazy Loading** and code splitting
+- **SEO Optimized** with structured data
+- **Fast Loading** with optimized assets
+
+### 🛠️ **Technical Implementation**
+- Built with **React.js** and modern JavaScript
+- **CSS Grid & Flexbox** for responsive layouts
+- **Intersection Observer API** for scroll animations
+- **EmailJS** integration for contact form
+- **Google Search Console** verified
 
 ---
 
 ## 📊 GitHub Stats
 
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=kathirvel-p22&show_icons=true&theme=tokyonight)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kathirvel-p22&layout=compact&theme=tokyonight)
-
-</div>
+![Kathirvel's GitHub Stats](https://github-readme-stats.vercel.app/api?username=kathirvel-p22&show_icons=true&theme=radical)
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=kathirvel-p22&layout=compact&theme=radical)
 
 ---
 
-## 🤝 Connect With Me
+## 🔧 Local Development
 
-<div align="center">
+### Prerequisites
+- **Node.js** (v18 or higher)
+- **npm** or **yarn**
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/kathirvel-p-981092330/)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/kathirvel-p22)
-[![WhatsApp](https://img.shields.io/badge/WhatsApp-Chat-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/918637684914)
-[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mpmahendhira@gmail.com)
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/kathirvel-p22/Kathirvel-Portfolio.git
 
-</div>
+# Navigate to project directory
+cd Kathirvel-Portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
+```
+
+### Build for Production
+```bash
+# Create production build
+npm run build
+
+# Serve production build locally
+npm run serve
+```
 
 ---
 
 ## 📝 License
 
-This project is licensed under the MIT License - feel free to use it for your own portfolio!
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 💖 Acknowledgments
+## 🤝 Contributing
 
-- 🎨 Design inspiration from modern portfolio trends
-- 🌊 WebGL fluid animation concept
-- ⚛️ React community for amazing tools
-- 🎯 All open-source contributors
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/kathirvel-p22/Kathirvel-Portfolio/issues).
+
+---
+
+## ⭐ Show Your Support
+
+If you like this project, please consider giving it a ⭐ on GitHub!
 
 ---
 
 <div align="center">
 
-### ⭐ Star this repo if you found it helpful!
+**Built with ❤️ by [Kathirvel P](https://kathirvel-p.netlify.app)**
 
-**Made with ❤️ by Kathirvel P**
-
-*Aspiring Software Engineer building scalable, high-performance applications*
+*AI Developer • MERN Stack Developer • Researcher • JeduAI Founder*
 
 </div>

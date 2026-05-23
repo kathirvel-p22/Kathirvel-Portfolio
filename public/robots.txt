@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://kathirvel-p.netlify.app/sitemap.xml
+
+# Disallow admin or private areas (if any)
+# Disallow: /admin/
