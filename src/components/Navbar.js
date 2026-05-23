@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 import resumePDF from '../Kathirvel_P_Resume.pdf';
 
-const links = ['About', 'Skills', 'Projects', 'FAQs', 'Contact'];
+const links = ['About', 'Skills', 'Projects', 'Blog', 'FAQs', 'Contact'];
 
 export default function Navbar() {
   const [active, setActive] = useState('');
@@ -29,8 +29,10 @@ export default function Navbar() {
         {links.map(l => (
           <a
             key={l}
-            href={`#${l.toLowerCase()}`}
+            href={l === 'Blog' ? 'https://kathirvel-p.blogspot.com/' : `#${l.toLowerCase()}`}
             className={active === l.toLowerCase() ? 'active' : ''}
+            target={l === 'Blog' ? '_blank' : '_self'}
+            rel={l === 'Blog' ? 'noopener noreferrer' : ''}
           >{l}</a>
         ))}
       </div>

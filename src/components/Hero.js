@@ -66,10 +66,10 @@ export default function Hero() {
           <span className="cursor" />
         </div>
         <p className="hero-desc">
-          Kathirvel P is an AI and MERN Stack developer specializing in cybersecurity, multilingual AI systems, 
-          and mobile applications. I build scalable, high-performance web and mobile applications using React, 
-          Node.js, Python, Java, and cutting-edge AI technologies. Founder of JeduAI and passionate about 
-          creating innovative solutions that solve real-world problems.
+          Kathirvel P is an AI Developer, MERN Stack Developer, and JeduAI Founder specializing in cybersecurity, 
+          multilingual AI systems, and innovative mobile applications. Creator of FreshField, LinkOrtex AI, and 
+          secure wallet applications. I build scalable, high-performance solutions using React, Node.js, Python, 
+          Java, and cutting-edge AI technologies that solve real-world problems.
         </p>
         <div className="hero-btns">
           <a href="#projects" className="btn-primary">Check portfolio</a>

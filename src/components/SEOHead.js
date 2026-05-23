@@ -52,7 +52,8 @@ export default function SEOHead() {
         },
         "sameAs": [
           "https://github.com/kathirvel-p22",
-          "https://linkedin.com/in/kathirvel-p"
+          "https://www.linkedin.com/in/kathirvel-p-981092330/",
+          "https://kathirvel-p.blogspot.com/"
         ]
       },
       {
