@@ -1,11 +1,11 @@
-# 🚀 Kathirvel P - AI Developer & MERN Stack Developer Portfolio
+# 🚀 Kathirvel P - JeduAI Founder | AI Developer & MERN Stack Developer Portfolio
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://kathirvel-p.netlify.app)
 [![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-> **AI and MERN Stack Developer** specializing in cybersecurity, multilingual AI systems, and mobile applications. Building scalable, high-performance applications with React, Node.js, Python, and Java.
+> **JeduAI Founder, AI Developer & MERN Stack Developer** specializing in cybersecurity, multilingual AI systems, and mobile applications. Building scalable, high-performance applications with React, Node.js, Python, and Java.
 
 ## 🌟 Live Portfolio
 **[🔗 Visit Portfolio](https://kathirvel-p.netlify.app)**

@@ -7,8 +7,8 @@ export default function Footer() {
       <div className="footer-grid">
         <div className="footer-brand">
           <h3>Kathirvel P</h3>
-          <div className="footer-role">AI DEVELOPER & JEDUAI FOUNDER & MERN STACK DEVELOPER</div>
-          <p>AI Developer, MERN Stack Developer, and JeduAI Founder building scalable, high-performance applications with a focus on cybersecurity, FreshField, LinkOrtex AI, and innovative solutions.</p>
+          <div className="footer-role">JEDUAI FOUNDER & AI DEVELOPER & MERN STACK DEVELOPER</div>
+          <p>JeduAI Founder, AI Developer, and MERN Stack Developer building scalable, high-performance applications with a focus on cybersecurity, FreshField, LinkOrtex AI, and innovative solutions.</p>
         </div>
 
         <div className="footer-social">

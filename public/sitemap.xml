@@ -1,32 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://kathirvel-p.netlify.app/</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://kathirvel-p.netlify.app/hero-preview.webp</image:loc>
+      <image:title>Kathirvel P - JeduAI Founder, AI Developer</image:title>
+      <image:caption>Kathirvel P, JeduAI Founder and AI Developer specializing in MERN Stack development</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://kathirvel-p.netlify.app/#about</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://kathirvel-p.netlify.app/#skills</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kathirvel-p.netlify.app/#projects</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://kathirvel-p.netlify.app/#contact</loc>
-    <lastmod>2026-05-23</lastmod>
+    <lastmod>2026-06-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

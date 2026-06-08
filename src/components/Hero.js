@@ -56,7 +56,7 @@ export default function Hero() {
     <section id="hero" className="hero-section">
       {/* ── Left: text content ── */}
       <div className="hero-content">
-        <div className="hero-badge">AI Developer & MERN Stack Developer</div>
+        <div className="hero-badge">JeduAI Founder &amp; AI Developer &amp; MERN Stack Developer</div>
         <h1 className="hero-title">
           Hey! I'm <span className="name">Kathirvel P</span>
         </h1>
@@ -66,7 +66,7 @@ export default function Hero() {
           <span className="cursor" />
         </div>
         <p className="hero-desc">
-          Kathirvel P is an AI Developer, MERN Stack Developer, and JeduAI Founder specializing in cybersecurity, 
+          Kathirvel P is JeduAI Founder, AI Developer, and MERN Stack Developer specializing in cybersecurity, 
           multilingual AI systems, and innovative mobile applications. Creator of FreshField, LinkOrtex AI, and 
           secure wallet applications. I build scalable, high-performance solutions using React, Node.js, Python, 
           Java, and cutting-edge AI technologies that solve real-world problems.
